@@ -104,7 +104,8 @@ for folder in sorted(p for p in FAXIN.iterdir() if p.is_dir()):
               f"层 {clash['a_layer']}/{clash['b_layer']}")
     for drift in report["displacements"][:3]:
         print(f"      [错位] {drift['from_operation']:<13s} -> "
-              f"{drift['to_operation']:<13s} 位移 {drift['displacement_mm']}mm")
+              f"{drift['to_operation']:<13s} 残余位移 {drift['residual_mm']}mm "
+              f"视图 {drift.get('before_view')}")
 
 print()
 print("=" * 100)
