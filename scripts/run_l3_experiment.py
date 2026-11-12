@@ -38,6 +38,12 @@ BASE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BASE / "chainmodel" / "src"))
 
 from farmcad.data.geometry import merge_process_only_steps  # noqa: E402
+from farmcad.data.geometric_chain import (  # noqa: E402
+    build_chain,
+    chain_coverage,
+    score_chain,
+)
+from farmcad.data.l3_model import L3Model, evaluate  # noqa: E402
 from farmcad.data.localization import (  # noqa: E402
     dimension_features,
     localise_onto_design,
@@ -142,6 +148,25 @@ def run(part: str) -> dict:
     }
 
 
+def collect_training(part: str) -> list[tuple]:
+    """The (design, operation label, operation) triples of one part."""
+
+    folder = FAXIN / part
+    design_path = DESIGN / f"{part}.json"
+    if not design_path.exists():
+        return []
+    design = load(design_path)
+    files = sorted(folder.glob("*.json"), key=lambda p: step_of(p, part)[0])
+    raw = [{"label": step_of(p, part)[1], "data": load(p)} for p in files]
+    merged = merge_process_only_steps(raw)
+    triples = []
+    for step in merged:
+        if not dimension_features(step["data"]):
+            continue
+        triples.append((design, step["label"], step["data"]))
+    return triples
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=None)
@@ -166,6 +191,32 @@ def main() -> int:
     cut = max(1, int(round(len(names) * args.train_ratio)))
     split = {"train": names[:cut], "validation": names[cut:]}
 
+    # The model is fitted on the training parts only and evaluated on the
+    # validation parts, so the comparison with the baselines is on data
+    # the model has not seen.
+    training = []
+    for part in split["train"]:
+        training.extend(collect_training(part))
+    model = L3Model().fit(training)
+
+    model_scores = {}
+    chain_scores = {}
+    chain_coverages = {}
+    for part in names:
+        triples = collect_training(part)
+        if not triples:
+            continue
+        model_scores[part] = evaluate(model, triples)
+
+        folder = FAXIN / part
+        design = load(DESIGN / f"{part}.json")
+        files = sorted(folder.glob("*.json"), key=lambda p: step_of(p, part)[0])
+        raw = [{"label": step_of(p, part)[1], "data": load(p)} for p in files]
+        merged = merge_process_only_steps(raw)
+        chain = build_chain(design, merged, part)
+        chain_scores[part] = score_chain(chain, merged)
+        chain_coverages[part] = chain_coverage(chain, merged)
+
     def aggregate(key, subset):
         rows = [c for c in cases if c["case_id"] in subset]
         predicted = sum(c[key]["predicted"] for c in rows)
@@ -178,6 +229,33 @@ def main() -> int:
             "f1": 2 * matched / max(1, predicted + actual),
         }
 
+    def aggregate_model(subset):
+        rows = [model_scores[p] for p in subset if p in model_scores]
+        predicted = sum(r["predicted"] for r in rows)
+        matched = sum(r["matched"] for r in rows)
+        actual = sum(r["actual"] for r in rows)
+        return {
+            "predicted": predicted, "matched": matched, "actual": actual,
+            "precision": matched / max(1, predicted),
+            "recall": matched / max(1, actual),
+            "f1": 2 * matched / max(1, predicted + actual),
+        }
+
+    def aggregate_chain(subset):
+        rows = [chain_scores[p] for p in subset if p in chain_scores]
+        predicted = sum(r["predicted"] for r in rows)
+        matched = sum(r["matched"] for r in rows)
+        actual = sum(r["actual"] for r in rows)
+        coverages = [chain_coverages[p] for p in subset if p in chain_coverages]
+        return {
+            "predicted": predicted, "matched": matched, "actual": actual,
+            "precision": matched / max(1, predicted),
+            "recall": matched / max(1, actual),
+            "f1": 2 * matched / max(1, predicted + actual),
+            "coverage": (sum(c["covered"] for c in coverages)
+                         / max(1, sum(c["total"] for c in coverages))),
+        }
+
     print()
     print("=" * 88)
     print("L3 可证伪目标: 合成器复现每道工序图纸的尺寸集合")
@@ -187,6 +265,8 @@ def main() -> int:
             continue
         oracle = aggregate("oracle", subset)
         rule = aggregate("rule", subset)
+        learned = aggregate_model(subset)
+        chain = aggregate_chain(subset)
         print(f"  {name} ({len(subset)} 个零件)")
         print(f"      oracle  P {oracle['precision'] * 100:5.1f}%  "
               f"R {oracle['recall'] * 100:5.1f}%  F1 {oracle['f1'] * 100:5.1f}%  "
@@ -194,14 +274,24 @@ def main() -> int:
         print(f"      rule    P {rule['precision'] * 100:5.1f}%  "
               f"R {rule['recall'] * 100:5.1f}%  F1 {rule['f1'] * 100:5.1f}%  "
               f"({rule['matched']}/{rule['actual']})")
-        print(f"      几何链需要补足的召回: "
-              f"{(oracle['recall'] - rule['recall']) * 100:5.1f} 个百分点")
+        print(f"      model   P {learned['precision'] * 100:5.1f}%  "
+              f"R {learned['recall'] * 100:5.1f}%  F1 {learned['f1'] * 100:5.1f}%  "
+              f"({learned['matched']}/{learned['actual']})")
+        print(f"      chain   P {chain['precision'] * 100:5.1f}%  "
+              f"R {chain['recall'] * 100:5.1f}%  F1 {chain['f1'] * 100:5.1f}%  "
+              f"({chain['matched']}/{chain['actual']})  "
+              f"覆盖率 {chain['coverage'] * 100:5.1f}%")
+        print(f"      几何链需补足的召回 {(oracle['recall'] - rule['recall']) * 100:5.1f} pp, "
+              f"模型补上 {(learned['recall'] - rule['recall']) * 100:5.1f} pp, "
+              f"几何链补上 {(chain['recall'] - rule['recall']) * 100:5.1f} pp")
 
     output = args.output or (BASE / "chainmodel" / "data" / "l3_experiment.json")
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps({
         "cases": cases,
         "split": split,
+        "model": {p: {k: v for k, v in s.items() if k != "per_case"}
+                  for p, s in model_scores.items()},
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print()
     print(f"已写入 {output}")

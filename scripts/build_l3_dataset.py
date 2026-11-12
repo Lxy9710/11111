@@ -1,21 +1,36 @@
 """Build the L3 geometric state dataset from the FAXIN corpus.
 
 The parameter chain says what number each operation sets. It does not say
-what the part looks like after that operation, so a cascade cannot be
-checked. This module turns a folder of process drawings into an explicit
-sequence of geometric states:
+which feature of the part that number belongs to, or whether the operation
+changed that feature. This module turns a folder of process drawings into
+the geometric counterpart of the chain: for every operation, the features
+it touches, the values it states, and whether it kept or changed each one.
 
-    state 0  ->  operation 1  ->  state 1  ->  operation 2  ->  state 2 ...
+What the corpus turned out to be
+--------------------------------
+The process drawings are per-operation views, not cumulative states. Each
+one is laid out on its own, annotates what matters for its operation, and
+does not accumulate the geometry of the steps before it: measured on the
+corpus, the radial profiles of two consecutive steps share no radius at
+all and are never nested.
 
-Each state records the entities that exist, the radial profile of the part
-in millimetres, the dimensions that measure it with their real values, and
-the correspondence to the previous state: what was added, what was removed,
-and what changed value.
+So the state of the part cannot be read off a single drawing, and the
+correspondence between an operation and the nominal part has to be
+established through the geometry each dimension measures. That is what
+:mod:`farmcad.data.localization` does.
 
-The transitions are what a cascaded modification has to explain. A transition
-is legal when the part did not lose material it should have kept, when a
-dimension did not move in a direction the operation cannot cause, and when
-the entities the operation claims to touch are actually present.
+The chain this module produces
+------------------------------
+For every operation:
+
+    touched   the nominal features the operation states
+    kept      those it states unchanged
+    changed   those it states with a different value
+    introduced  the dimensions it states that no nominal feature matches
+
+That last group matters. An operation that states a dimension with no
+nominal counterpart is introducing a feature the nominal part does not
+have, and the chain has to say so rather than silently dropping it.
 
 Usage:
     python scripts/build_l3_dataset.py --part C3359-08-01
@@ -34,16 +49,15 @@ BASE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BASE / "chainmodel" / "src"))
 
 from farmcad.data.geometry import (  # noqa: E402
-    cascade_trace,
     collect_entities,
     dimension_truth,
-    has_part_contour,
     merge_process_only_steps,
-    pair_across_steps,
-    pair_geometry_across_steps,
     plot_scale,
-    profile_delta,
     radial_profile,
+)
+from farmcad.data.localization import (  # noqa: E402
+    dimension_features,
+    localise_onto_design,
 )
 
 GEO = BASE / "设计图" / "geo"
@@ -58,7 +72,7 @@ REMOVING_OPERATIONS = ("车", "铣", "磨", "刨", "钻", "镗", "珩", "研", "
 #: Operations that add material back.
 ADDING_OPERATIONS = ("滚", "压", "镶", "焊", "涂", "镀")
 
-L3_SCHEMA_VERSION = "farmcad-l3-v1"
+L3_SCHEMA_VERSION = "farmcad-l3-v2"
 
 
 def load(path: Path) -> dict:
@@ -82,29 +96,8 @@ def operation_kind(label: str) -> str:
     return "neutral"
 
 
-def _state_of(data: dict, label: str, step_index: int, route: list[str],
-              machining: bool) -> dict:
-    """Build the geometric description of one state."""
-
-    scale = plot_scale(data)
-    truth = dimension_truth(data)
-    profile = radial_profile(data, scale)
-    return {
-        "operation": label,
-        "route": route,
-        "step_index": step_index,
-        "operation_kind": operation_kind(label),
-        "machining": machining,
-        "entities": len(collect_entities(data)),
-        "scale": scale,
-        "has_part_contour": has_part_contour(data),
-        "radial_profile": profile,
-        "dimensions": truth,
-    }
-
-
-def build_states(folder: Path, design_path: Path | None = None) -> dict:
-    """Build the geometric state sequence of one part."""
+def build_case(folder: Path, design_path: Path | None = None) -> dict:
+    """Build the geometric counterpart of one part's process chain."""
 
     part = folder.name
     files = sorted(folder.glob("*.json"), key=lambda p: step_of(p, part)[0])
@@ -119,142 +112,201 @@ def build_states(folder: Path, design_path: Path | None = None) -> dict:
     # the sequence contains genuine geometric states.
     merged = merge_process_only_steps(raw_steps)
 
-    states = []
-    previous_data = None
-    previous_state = None
-    for index, step in enumerate(merged):
-        data = step["data"]
-        entry = _state_of(data, step["label"], index, step["route"],
-                          step["machining"])
-        entry["state_id"] = f"{part}#S{index:02d}"
-        if previous_data is not None:
-            pairing = pair_across_steps(previous_data, data)
-            shapes = pair_geometry_across_steps(previous_data, data)
-            delta = profile_delta(previous_state["radial_profile"],
-                                  entry["radial_profile"])
-            entry["transition"] = {
-                "paired_dimensions": len(pairing["pairs"]),
-                "changed_dimensions": len(pairing["changed"]),
-                "added_dimensions": len(pairing["added"]),
-                "removed_dimensions": len(pairing["removed"]),
-                "value_changes": pairing["changed"],
-                "geometry_common": shapes["common"],
-                "geometry_added": shapes["added"],
-                "geometry_removed": shapes["removed"],
-                "geometry_jaccard": round(shapes["jaccard"], 4),
-                "profile": delta,
-            }
-        states.append(entry)
-        previous_data = data
-        previous_state = entry
-
-    traces = cascade_trace([{"label": s["label"], "data": s["data"]}
-                            for s in merged])
-
     design = None
+    nominal = []
     if design_path is not None and design_path.exists():
         design_data = load(design_path)
-        design_state = _state_of(design_data, "设计图", -1, ["设计图"], True)
-        design_state["path"] = str(design_path.relative_to(BASE))
-        design = design_state
+        nominal = dimension_features(design_data)
+        scale = plot_scale(design_data)
+        design = {
+            "path": str(design_path.relative_to(BASE)),
+            "entities": len(collect_entities(design_data)),
+            "scale": scale,
+            "radial_profile": radial_profile(design_data, scale),
+            "dimensions": nominal,
+            "dimension_truth": dimension_truth(design_data),
+        }
+
+    operations = []
+    for index, step in enumerate(merged):
+        data = step["data"]
+        actual = dimension_features(data)
+        scale = plot_scale(data)
+
+        if design is not None:
+            localisation = localise_onto_design(design_data, data)
+        else:
+            localisation = {
+                "matches": [], "changed": [], "kept": [],
+                "unmatched_operation": actual, "unmatched_design": [],
+                "matched": 0, "operation_features": len(actual),
+                "design_features": 0,
+            }
+
+        operations.append({
+            "state_id": f"{part}#S{index:02d}",
+            "step_index": index,
+            "operation": step["label"],
+            "route": step["route"],
+            "operation_kind": operation_kind(step["label"]),
+            "machining": step["machining"],
+            "entities": len(collect_entities(data)),
+            "scale": scale,
+            "radial_profile": radial_profile(data, scale),
+            "dimensions": actual,
+            "touched": [
+                {
+                    "nominal_handle": m["target_handle"],
+                    "nominal_value_mm": m["target_value_mm"],
+                    "stated_value_mm": m["source_value_mm"],
+                    "delta_mm": m["delta_mm"],
+                }
+                for m in localisation["matches"]
+            ],
+            "kept": [m["target_handle"] for m in localisation["kept"]],
+            "changed": localisation["changed"],
+            "introduced": [
+                {"value_mm": f["value_mm"], "handle": f["handle"]}
+                for f in localisation["unmatched_operation"]
+            ],
+            "untouched_nominal": [
+                {"nominal_handle": f["handle"], "value_mm": f["value_mm"]}
+                for f in localisation["unmatched_design"]
+            ],
+        })
 
     return {
         "schema_version": L3_SCHEMA_VERSION,
         "case_id": part,
         "design": design,
-        "states": states,
-        "cascade_traces": traces,
+        "operations": operations,
         "summary": {
             "steps": len(raw_steps),
-            "geometric_states": len(states),
-            "machining_steps": sum(1 for s in states if s["machining"]),
-            "states_with_part_contour": sum(1 for s in states if s["has_part_contour"]),
-            "cross_step_dimensions": sum(
-                s.get("transition", {}).get("paired_dimensions", 0) for s in states),
-            "changed_dimensions": sum(
-                s.get("transition", {}).get("changed_dimensions", 0) for s in states),
-            "decreasing_traces": sum(1 for t in traces if t["decreasing"]),
+            "operations": len(operations),
+            "dimensions_stated": sum(len(o["dimensions"]) for o in operations),
+            "localised": sum(len(o["touched"]) for o in operations),
+            "kept": sum(len(o["kept"]) for o in operations),
+            "changed": sum(len(o["changed"]) for o in operations),
+            "introduced": sum(len(o["introduced"]) for o in operations),
+            "untouched_nominal": sum(len(o["untouched_nominal"]) for o in operations),
         },
     }
 
 
+#: A value change smaller than this is rounding, not a geometric change.
+#: A drawing is quoted to a fixed number of decimals, so the same feature
+#: is annotated slightly differently in two layouts.
+ROUNDING_TOLERANCE = 0.05
+
+
+def _significant(before: float, after: float) -> bool:
+    """Whether two values differ by more than the rounding tolerance."""
+
+    return abs(after - before) > max(ROUNDING_TOLERANCE,
+                                     0.001 * abs(before))
+
+
 def check_consistency(case: dict) -> list[dict]:
-    """Check the geometric states for contradictions.
+    """Check the geometric chain for contradictions.
 
-    These are the failure modes the paper has to rule out: a feature that
-    the operation touches is not present, the part gained material where an
-    operation only removes it, a dimension moved in a direction the operation
-    cannot cause, or a dimension points at geometry that is gone.
+    These are the failure modes the paper has to rule out, and each check
+    is one that the evidence can actually support.
 
-    Only checks that the evidence actually supports are performed. Entity
-    counts are not compared across steps, because each process drawing is
-    laid out independently and adds its own section views, tool paths and
-    annotation, so the entity count carries no part-level meaning.
+    An interference is two operations that state the same feature with
+    values that cannot both hold: the feature goes down and then back up,
+    which no single pass of a route does.
+
+    An illegal constraint is a material removing operation that states a
+    value larger than the nominal one for a feature, when nothing in
+    between added material back.
+
+    A dangling reference is a nominal feature that every operation states
+    differently, so no operation ever pins it down.
+
+    Changes smaller than the rounding tolerance are not reported. A
+    feature annotated 65.90 in one drawing and 65.95 in another is the
+    same feature with a rounded value, not a feature that grew.
     """
 
     issues = []
-    states = case["states"]
-    for state in states:
-        transition = state.get("transition")
-        if transition is None:
+    operations = case["operations"]
+
+    # Interference: the same feature, stated inconsistently by two steps.
+    stated_by = {}
+    for operation in operations:
+        for touch in operation["touched"]:
+            handle = touch["nominal_handle"]
+            stated_by.setdefault(handle, []).append((operation, touch))
+
+    for handle, entries in stated_by.items():
+        if len(entries) < 2:
             continue
-        kind = state["operation_kind"]
-        name = state["operation"]
-        profile = transition["profile"]
-
-        # An operation that only removes material must not add a radius to
-        # the part's radial profile.
-        if kind == "removing" and profile["added_radii"]:
+        # The values a single feature takes must not oscillate: a feature
+        # that goes down and then back up was changed twice, which no
+        # single pass of a route does. Rounding differences do not count
+        # as a direction change.
+        values = [touch["stated_value_mm"] for _, touch in entries]
+        directions = []
+        for i in range(len(values) - 1):
+            if not _significant(values[i], values[i + 1]):
+                continue
+            directions.append(1 if values[i + 1] > values[i] else -1)
+        turns = sum(1 for i in range(len(directions) - 1)
+                    if directions[i] * directions[i + 1] < 0)
+        if turns:
             issues.append({
-                "state": state["state_id"],
-                "operation": name,
-                "kind": "material_added",
-                "detail": f"{name} 去料工序却新增了半径 "
-                          f"{sorted(profile['added_radii'])}",
+                "kind": "interference",
+                "feature": handle,
+                "detail": f"同一特征在工序间取值反复: {values}",
+                "operations": [o["operation"] for o, _ in entries],
             })
 
-        # A dimension that moved in the direction the operation cannot cause.
-        if kind == "removing":
-            for change in transition["value_changes"]:
-                before = change["before_value"]
-                after = change["after_value"]
-                if before is None or after is None:
-                    continue
-                if after > before:
-                    issues.append({
-                        "state": state["state_id"],
-                        "operation": name,
-                        "kind": "dimension_grew",
-                        "detail": f"跨度 {change['span']} 的尺寸由 {before} 增至 {after}",
-                    })
+    # An illegal constraint: a removing operation states a value larger
+    # than the value the previous operation left on the same feature.
+    #
+    # The comparison is against the previous operation, not against the
+    # nominal value. A removing operation works from the stock towards the
+    # finished size, so its value is normally larger than the nominal one
+    # and shrinks as the route proceeds. A value that grows from one
+    # removing operation to the next means material was added back
+    # without anything adding it.
+    previous_value: dict[str, tuple] = {}
+    for index, operation in enumerate(operations):
+        for touch in operation["touched"]:
+            handle = touch["nominal_handle"]
+            stated = touch["stated_value_mm"]
+            earlier = previous_value.get(handle)
+            if earlier is not None and operation["operation_kind"] == "removing":
+                before_operation, before_value = earlier
+                if _significant(before_value, stated) and stated > before_value:
+                    between = operations[before_operation["step_index"]:index]
+                    if not any(o["operation_kind"] == "adding" for o in between):
+                        issues.append({
+                            "kind": "illegal_growth",
+                            "feature": handle,
+                            "state": operation["state_id"],
+                            "detail": f"{before_operation['operation']} 之后特征 "
+                                      f"{handle} 为 {before_value}, "
+                                      f"{operation['operation']} 却增至 {stated}, "
+                                      f"中间没有加料工序",
+                        })
+            previous_value[handle] = (operation, stated)
 
-        # A dimension that disappeared while the geometry stayed is a
-        # dangling reference: something was un-annotated, not removed.
-        if transition["removed_dimensions"] and not profile["removed_radii"]:
+    # A dangling reference: a feature every operation states, but none
+    # pins down.
+    for handle, entries in stated_by.items():
+        if len(entries) < 2:
+            continue
+        if len({touch["stated_value_mm"] for _, touch in entries}) == 1:
+            continue
+        if all(_significant(touch["nominal_value_mm"], touch["stated_value_mm"])
+               for _, touch in entries):
             issues.append({
-                "state": state["state_id"],
-                "operation": name,
-                "kind": "dangling_dimension",
-                "detail": f"移除了 {transition['removed_dimensions']} 个尺寸标注, "
-                          f"但径向轮廓没有减少",
+                "kind": "dangling_feature",
+                "feature": handle,
+                "detail": f"特征 {handle} 被每道工序都声明, 但每次都与名义值不同",
             })
 
-    # A part drawn at a later state must not be larger than at an earlier
-    # state, when the operations between them only remove material.
-    contours = [s for s in states if s["has_part_contour"]]
-    for i in range(len(contours)):
-        for j in range(i + 1, len(contours)):
-            between = states[contours[i]["step_index"]:contours[j]["step_index"]]
-            if all(s["operation_kind"] != "adding" for s in between):
-                before = contours[i]["radial_profile"]["max"]
-                after = contours[j]["radial_profile"]["max"]
-                if after > before:
-                    issues.append({
-                        "state": contours[j]["state_id"],
-                        "operation": contours[j]["operation"],
-                        "kind": "contour_grew",
-                        "detail": f"最大半径由 {before} 增至 {after}, 中间工序只去料",
-                    })
     return issues
 
 
@@ -288,19 +340,20 @@ def main() -> int:
     cases = []
     for folder in folders:
         design_path = DESIGN / f"{folder.name}.json"
-        case = build_states(folder, design_path)
+        case = build_case(folder, design_path)
         issues = check_consistency(case)
         case["consistency_issues"] = issues
         cases.append(case)
         summary = case["summary"]
-        print(f"{folder.name:<16s} 状态 {summary['geometric_states']:>2d} "
-              f"(工序 {summary['steps']:>2d})  "
-              f"轮廓步 {summary['states_with_part_contour']:>2d}  "
-              f"跨步尺寸 {summary['cross_step_dimensions']:>3d}  "
-              f"值变化 {summary['changed_dimensions']:>2d}  "
-              f"递减轨迹 {summary['decreasing_traces']:>2d}  "
+        print(f"{folder.name:<16s} 工序 {summary['operations']:>2d}  "
+              f"声明尺寸 {summary['dimensions_stated']:>3d}  "
+              f"定位 {summary['localised']:>3d}  "
+              f"保持 {summary['kept']:>3d}  "
+              f"改动 {summary['changed']:>3d}  "
+              f"新增 {summary['introduced']:>3d}  "
+              f"未提及 {summary['untouched_nominal']:>3d}  "
               f"一致性问题 {len(issues):>2d}")
-        for issue in issues[:5]:
+        for issue in issues[:4]:
             print(f"      [{issue['kind']}] {issue['detail']}")
 
     split = split_parts(cases, args.train_ratio)
