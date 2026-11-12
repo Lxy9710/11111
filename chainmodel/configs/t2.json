@@ -1,0 +1,47 @@
+{
+  "model": {
+    "hidden": 128,
+    "graph_layers": 3,
+    "dropout": 0.1,
+    "text_bytes": 1024,
+    "pointer_slots": 4,
+    "max_entities": 2000,
+    "max_events": 512,
+    "max_operations": 64,
+    "max_parameters": 32,
+    "role_threshold": 0.5
+  },
+  "training": {
+    "seed": 17,
+    "epochs": 100,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "accumulate_cases": 1,
+    "num_threads": 2,
+    "device": "cpu",
+    "max_updates": 0,
+    "patience": 10,
+    "quality_weights": {
+      "gold": 1.0,
+      "silver": 0.5,
+      "system": 0.2,
+      "candidate": 0.0,
+      "unknown": 0.0
+    },
+    "loss_weights": {
+      "action": 1.0,
+      "operation": 1.0,
+      "parameter": 1.0,
+      "features": 1.0,
+      "requirements": 1.0,
+      "sources": 1.0,
+      "roles": 0.5,
+      "update": 0.5,
+      "value": 0.1,
+      "value_mask": 0.1,
+      "unit": 0.1,
+      "group": 1.0
+    }
+  }
+}

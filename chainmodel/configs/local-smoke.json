@@ -1,0 +1,19 @@
+{
+  "architecture": "local",
+  "model": {
+    "hidden": 32,
+    "graph_layers": 2,
+    "dropout": 0.0,
+    "text_bytes": 96,
+    "max_entities": 1000,
+    "pointer_slots": 4
+  },
+  "training": {
+    "seed": 17,
+    "epochs": 3,
+    "learning_rate": 0.003,
+    "num_threads": 1,
+    "device": "cpu",
+    "max_updates": 3
+  }
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "farmcad-chainmodel"
+version = "0.1.0"
+description = "Design-conditioned process-chain generation with typed pointer memories"
+requires-python = ">=3.8"
+dependencies = ["torch>=1.13,<3", "numpy>=1.21,<3"]
+
+[project.scripts]
+farmcad = "farmcad.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyright]
+include = ["src", "tests", "run.py"]
+extraPaths = ["src"]
+pythonVersion = "3.8"

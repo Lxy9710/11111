@@ -1,0 +1,10 @@
+{
+  "backend": "placeholder",
+  "model_name": "qwen3.6-27B",
+  "model_path": "E:\\AAhz\\20260918\\intentionCAD\\llm",
+  "max_context_chars": 16000,
+  "page_size": 4,
+  "max_steps": 128,
+  "max_candidate_states": 256,
+  "max_parameters_per_operation": 32
+}

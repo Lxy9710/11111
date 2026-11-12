@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+data/processed/
+runs/
+
+# 路线抽取的中间产物，由 scripts/route_template/extract_routes.py 可重建
+data/route_templates/routes_raw.json

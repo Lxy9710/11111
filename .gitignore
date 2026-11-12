@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# 大体积的第三方/上游检出，不是本项目源码
+GNN/
+NOVbcj/
+GNN.zip
+
+# 设计图源文件与过程产物（体积大，且可由脚本重建）
+设计图/
+pilot/
+
+# 论文与文档草稿
+intentCAD.docx
+paper.txt
+
+# 训练产物与中间数据
+chainmodel/runs/
+chainmodel/data/processed/
