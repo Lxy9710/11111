@@ -903,12 +903,16 @@ def check_geometry(design: dict, steps: list[dict]) -> dict:
     without overlapping on the part, so a check that ignores the views
     measures the layout rather than the geometry.
 
-    The drift check compares the same view in two consecutive steps, each
-    normalised by its own plot scale. It is a *candidate* drift rather
-    than a fault, because the operation drawings are laid out
-    independently: the same feature is drawn in a different place in each
-    of them, so a raw displacement measures the layout and not the part.
+    The drift check establishes a correspondence between the views of two
+    consecutive steps and removes the layout offset before comparing. On
+    this corpus the raw displacement between two steps is explained
+    entirely by the offset of the drawings' centres, so the raw check
+    measures the layout; after the correction, the residual is a fraction
+    of a millimetre when the operation did not change the geometry, and
+    of the order of the material removed when it did.
     """
+
+    from .correspondence import correspond
 
     steps_views = []
     for step in steps:
@@ -938,20 +942,13 @@ def check_geometry(design: dict, steps: list[dict]) -> dict:
                     })
 
     displacements = []
-    for (before_label, before_views), (after_label, after_views) in zip(
-            steps_views, steps_views[1:]):
-        for name in set(before_views) & set(after_views):
-            before = before_views[name]
-            after = after_views[name]
-            if not before or not after:
-                continue
-            result = match_entities(before, after, tolerance=DRIFT_TOLERANCE_MM)
-            for drift in result["drifted"]:
-                drift = dict(drift)
-                drift["view"] = name
-                drift["from_operation"] = before_label
-                drift["to_operation"] = after_label
-                displacements.append(drift)
+    for before_step, after_step in zip(steps, steps[1:]):
+        result = correspond(before_step["data"], after_step["data"])
+        for drift in result["moved"]:
+            drift = dict(drift)
+            drift["from_operation"] = before_step["label"]
+            drift["to_operation"] = after_step["label"]
+            displacements.append(drift)
 
     return {
         "interferences": interferences,
