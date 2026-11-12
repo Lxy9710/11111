@@ -1,0 +1,1050 @@
+{
+  "cases": [
+    {
+      "case_id": "2798Z-01-03",
+      "steps": [
+        {
+          "operation": "下料0",
+          "actual": 3,
+          "oracle": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 2,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "f1": 0.6666666666666666,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "数控车5",
+          "actual": 12,
+          "oracle": {
+            "predicted": 12,
+            "actual": 12,
+            "matched": 12,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 12,
+            "actual": 12,
+            "matched": 11,
+            "precision": 0.9166666666666666,
+            "recall": 0.9166666666666666,
+            "f1": 0.9166666666666666,
+            "mean_error_mm": 0.004545454545454287
+          }
+        },
+        {
+          "operation": "精车10",
+          "actual": 5,
+          "oracle": {
+            "predicted": 5,
+            "actual": 5,
+            "matched": 5,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 4,
+            "actual": 5,
+            "matched": 3,
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666665,
+            "mean_error_mm": 0.03333333333333144
+          }
+        },
+        {
+          "operation": "车研20",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "mean_error_mm": 0.09999999999999432
+          }
+        },
+        {
+          "operation": "外磨25",
+          "actual": 3,
+          "oracle": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 2,
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "f1": 0.6666666666666666,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "精线切35",
+          "actual": 3,
+          "oracle": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 1,
+            "precision": 0.3333333333333333,
+            "recall": 0.3333333333333333,
+            "f1": 0.3333333333333333,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "车40",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "珩研45",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          }
+        }
+      ],
+      "oracle": {
+        "predicted": 31,
+        "matched": 31,
+        "actual": 31,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rule": {
+        "predicted": 30,
+        "matched": 22,
+        "actual": 31,
+        "precision": 0.7333333333333333,
+        "recall": 0.7096774193548387,
+        "f1": 0.7213114754098361
+      }
+    },
+    {
+      "case_id": "3309-02-02",
+      "steps": [
+        {
+          "operation": "下料0",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 2,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        },
+        {
+          "operation": "数控车5",
+          "actual": 12,
+          "oracle": {
+            "predicted": 12,
+            "actual": 12,
+            "matched": 12,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 10,
+            "actual": 12,
+            "matched": 10,
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "精车10",
+          "actual": 4,
+          "oracle": {
+            "predicted": 4,
+            "actual": 4,
+            "matched": 4,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 4,
+            "actual": 4,
+            "matched": 3,
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "外磨30",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 0,
+            "actual": 1,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        }
+      ],
+      "oracle": {
+        "predicted": 19,
+        "matched": 19,
+        "actual": 19,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rule": {
+        "predicted": 15,
+        "matched": 13,
+        "actual": 19,
+        "precision": 0.8666666666666667,
+        "recall": 0.6842105263157895,
+        "f1": 0.7647058823529411
+      }
+    },
+    {
+      "case_id": "3309-07-02",
+      "steps": [
+        {
+          "operation": "下料0",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 2,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        },
+        {
+          "operation": "数控车5",
+          "actual": 14,
+          "oracle": {
+            "predicted": 14,
+            "actual": 14,
+            "matched": 14,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 11,
+            "actual": 14,
+            "matched": 8,
+            "precision": 0.7272727272727273,
+            "recall": 0.5714285714285714,
+            "f1": 0.64,
+            "mean_error_mm": 0.01875000000000071
+          }
+        },
+        {
+          "operation": "数控铣7",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "mean_error_mm": 0.5499999999999972
+          }
+        },
+        {
+          "operation": "精车10",
+          "actual": 7,
+          "oracle": {
+            "predicted": 7,
+            "actual": 7,
+            "matched": 7,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 5,
+            "actual": 7,
+            "matched": 4,
+            "precision": 0.8,
+            "recall": 0.5714285714285714,
+            "f1": 0.6666666666666666,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "钳15",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "外磨30",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        },
+        {
+          "operation": "螺纹磨35",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "钳50",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "mean_error_mm": 0.0
+          }
+        }
+      ],
+      "oracle": {
+        "predicted": 31,
+        "matched": 31,
+        "actual": 31,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rule": {
+        "predicted": 25,
+        "matched": 16,
+        "actual": 31,
+        "precision": 0.64,
+        "recall": 0.5161290322580645,
+        "f1": 0.5714285714285714
+      }
+    },
+    {
+      "case_id": "3309-09-01",
+      "steps": [
+        {
+          "operation": "下料0",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 2,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        },
+        {
+          "operation": "数控车5",
+          "actual": 25,
+          "oracle": {
+            "predicted": 25,
+            "actual": 25,
+            "matched": 25,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 19,
+            "actual": 25,
+            "matched": 17,
+            "precision": 0.8947368421052632,
+            "recall": 0.68,
+            "f1": 0.7727272727272727,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "精车10",
+          "actual": 4,
+          "oracle": {
+            "predicted": 4,
+            "actual": 4,
+            "matched": 4,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 4,
+            "actual": 4,
+            "matched": 4,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "钳15",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "外磨30",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "钳45",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          }
+        }
+      ],
+      "oracle": {
+        "predicted": 35,
+        "matched": 35,
+        "actual": 35,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rule": {
+        "predicted": 28,
+        "matched": 25,
+        "actual": 35,
+        "precision": 0.8928571428571429,
+        "recall": 0.7142857142857143,
+        "f1": 0.7936507936507936
+      }
+    },
+    {
+      "case_id": "4362.52-01-03",
+      "steps": [
+        {
+          "operation": "数控车5",
+          "actual": 5,
+          "oracle": {
+            "predicted": 5,
+            "actual": 5,
+            "matched": 5,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 4,
+            "actual": 5,
+            "matched": 3,
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666665,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "精车10",
+          "actual": 4,
+          "oracle": {
+            "predicted": 4,
+            "actual": 4,
+            "matched": 4,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 4,
+            "matched": 1,
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333333333333333,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "铣15",
+          "actual": 3,
+          "oracle": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 3,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "车研35",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 0,
+            "actual": 1,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        },
+        {
+          "operation": "外磨40",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 2,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        },
+        {
+          "operation": "车50",
+          "actual": 3,
+          "oracle": {
+            "predicted": 3,
+            "actual": 3,
+            "matched": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 2,
+            "actual": 3,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        }
+      ],
+      "oracle": {
+        "predicted": 18,
+        "matched": 18,
+        "actual": 18,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rule": {
+        "predicted": 10,
+        "matched": 5,
+        "actual": 18,
+        "precision": 0.5,
+        "recall": 0.2777777777777778,
+        "f1": 0.35714285714285715
+      }
+    },
+    {
+      "case_id": "C3359-08-01",
+      "steps": [
+        {
+          "operation": "下料0",
+          "actual": 2,
+          "oracle": {
+            "predicted": 2,
+            "actual": 2,
+            "matched": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 2,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "mean_error_mm": 0.05000000000000071
+          }
+        },
+        {
+          "operation": "数控车5",
+          "actual": 5,
+          "oracle": {
+            "predicted": 5,
+            "actual": 5,
+            "matched": 5,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 4,
+            "actual": 5,
+            "matched": 3,
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666665,
+            "mean_error_mm": 0.12099999999999984
+          }
+        },
+        {
+          "operation": "精车10",
+          "actual": 6,
+          "oracle": {
+            "predicted": 6,
+            "actual": 6,
+            "matched": 6,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 4,
+            "actual": 6,
+            "matched": 2,
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "钳20",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        },
+        {
+          "operation": "外磨35",
+          "actual": 10,
+          "oracle": {
+            "predicted": 10,
+            "actual": 10,
+            "matched": 10,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 9,
+            "actual": 10,
+            "matched": 9,
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526316,
+            "mean_error_mm": 0.0
+          }
+        },
+        {
+          "operation": "车45",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.6009999999999991
+          }
+        },
+        {
+          "operation": "钳50",
+          "actual": 1,
+          "oracle": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_error_mm": 0.0
+          },
+          "rule": {
+            "predicted": 1,
+            "actual": 1,
+            "matched": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mean_error_mm": null
+          }
+        }
+      ],
+      "oracle": {
+        "predicted": 26,
+        "matched": 26,
+        "actual": 26,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "rule": {
+        "predicted": 21,
+        "matched": 16,
+        "actual": 26,
+        "precision": 0.7619047619047619,
+        "recall": 0.6153846153846154,
+        "f1": 0.6808510638297872
+      }
+    }
+  ],
+  "split": {
+    "train": [
+      "2798Z-01-03",
+      "3309-02-02",
+      "3309-07-02"
+    ],
+    "validation": [
+      "3309-09-01",
+      "4362.52-01-03",
+      "C3359-08-01"
+    ]
+  },
+  "model": {
+    "2798Z-01-03": {
+      "predicted": 30,
+      "matched": 22,
+      "actual": 31,
+      "precision": 0.7333333333333333,
+      "recall": 0.7096774193548387,
+      "f1": 0.7213114754098361
+    },
+    "3309-02-02": {
+      "predicted": 15,
+      "matched": 9,
+      "actual": 19,
+      "precision": 0.6,
+      "recall": 0.47368421052631576,
+      "f1": 0.5294117647058824
+    },
+    "3309-07-02": {
+      "predicted": 25,
+      "matched": 12,
+      "actual": 31,
+      "precision": 0.48,
+      "recall": 0.3870967741935484,
+      "f1": 0.42857142857142855
+    },
+    "3309-09-01": {
+      "predicted": 28,
+      "matched": 19,
+      "actual": 35,
+      "precision": 0.6785714285714286,
+      "recall": 0.5428571428571428,
+      "f1": 0.6031746031746031
+    },
+    "4362.52-01-03": {
+      "predicted": 10,
+      "matched": 5,
+      "actual": 18,
+      "precision": 0.5,
+      "recall": 0.2777777777777778,
+      "f1": 0.35714285714285715
+    },
+    "C3359-08-01": {
+      "predicted": 21,
+      "matched": 12,
+      "actual": 26,
+      "precision": 0.5714285714285714,
+      "recall": 0.46153846153846156,
+      "f1": 0.5106382978723404
+    }
+  }
+}
