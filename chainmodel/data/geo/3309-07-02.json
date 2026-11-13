@@ -1,0 +1,3450 @@
+{
+  "schema_version": "farmcad-geo-state-v1",
+  "case_id": "3309-07-02",
+  "steps": [
+    {
+      "step": 0,
+      "operation": "下料0",
+      "source": "3309-07-02下料0.json",
+      "scale": 2.0,
+      "features": [
+        {
+          "feature": 1,
+          "name": "下料总长",
+          "labels": [
+            "下料总长"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 3,
+          "stated": [
+            {
+              "handle": "73",
+              "value_mm": 1500.0,
+              "measurement": 180.0,
+              "kind": null,
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            1500.0
+          ],
+          "geometry": {
+            "lines": 2,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              180.0,
+              180.0
+            ],
+            "bbox": [
+              427.8295072115385,
+              431.3234985268293,
+              607.83,
+              471.87133413461544
+            ]
+          },
+          "steps_seeing_it": [
+            0
+          ],
+          "introduced": true,
+          "persistent": false
+        },
+        {
+          "feature": 2,
+          "name": "下料直径",
+          "labels": [
+            "下料直径"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 3,
+          "stated": [
+            {
+              "handle": "8E",
+              "value_mm": 12.0,
+              "measurement": 24.0,
+              "kind": null,
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            12.0
+          ],
+          "geometry": {
+            "lines": 2,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              24.0,
+              24.0
+            ],
+            "bbox": [
+              427.8295072115385,
+              447.871,
+              648.7045072115385,
+              471.87133413461544
+            ]
+          },
+          "steps_seeing_it": [
+            0
+          ],
+          "introduced": true,
+          "persistent": false
+        }
+      ],
+      "feature_ids": [
+        1,
+        2
+      ],
+      "kept": [],
+      "changed": [],
+      "geometry_changed": [],
+      "redrawn": []
+    },
+    {
+      "step": 1,
+      "operation": "数控车5",
+      "source": "3309-07-02数控车5.json",
+      "scale": 3.0,
+      "features": [
+        {
+          "feature": 3,
+          "name": "外圆",
+          "labels": [
+            "外圆_1直径"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 28,
+          "stated": [
+            {
+              "handle": "2FE",
+              "value_mm": 8.5,
+              "measurement": 24.0,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            8.5
+          ],
+          "geometry": {
+            "lines": 26,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              9.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              574.6438401442308,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 4,
+          "name": "外圆",
+          "labels": [
+            "外圆_23直径"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 6,
+          "stated": [
+            {
+              "handle": "523",
+              "value_mm": 10.3,
+              "measurement": 30.0,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            10.3
+          ],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.8,
+              6.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              683.1733401891539,
+              235.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            12
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 5,
+          "name": "环槽",
+          "labels": [
+            "环槽_3直径_4槽宽_5与左端面距离"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 15,
+          "stated": [
+            {
+              "handle": "407",
+              "value_mm": 6.7,
+              "measurement": 20.100000000000023,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            6.7
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 3,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              7.5
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              522.594,
+              263.07349024796025
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 6,
+          "name": "环槽",
+          "labels": [
+            "环槽_3直径_14槽宽_6与左端面距离"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 16,
+          "stated": [
+            {
+              "handle": "420",
+              "value_mm": 20.7,
+              "measurement": 62.10000000000002,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            20.7
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 4,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              9.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              522.594,
+              275.1393588587065
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 7,
+          "name": "环槽",
+          "labels": [
+            "环槽_3直径_15槽宽_7与左端面距离"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 13,
+          "stated": [
+            {
+              "handle": "318",
+              "value_mm": 25.7,
+              "measurement": 77.10000000000002,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            25.7
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 4,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              4.5
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              487.24384014423083,
+              286.8183387971679
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 8,
+          "name": "环槽",
+          "labels": [
+            "环槽_3直径_18槽宽_8与左端面距离"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 16,
+          "stated": [
+            {
+              "handle": "439",
+              "value_mm": 53.1,
+              "measurement": 159.29999999999995,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            53.1
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 4,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              56.7
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              552.444,
+              303.3861940587062
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 9,
+          "name": "8处或9处环槽",
+          "labels": [
+            "8处或9处环槽_2直径_25槽宽"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 59,
+          "stated": [
+            {
+              "handle": "2FE",
+              "value_mm": 8.5,
+              "measurement": 24.0,
+              "kind": "直径",
+              "level": 1
+            },
+            {
+              "handle": "3D0",
+              "value_mm": 8.0,
+              "measurement": 1.0,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            8.0,
+            8.5
+          ],
+          "geometry": {
+            "lines": 54,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              1.5,
+              3.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              570.444,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 10,
+          "name": "槽间距",
+          "labels": [
+            "槽间距_13_16_20"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 22,
+          "stated": [
+            {
+              "handle": "4BB",
+              "value_mm": 3.0,
+              "measurement": 1.0,
+              "kind": "3",
+              "level": 1
+            },
+            {
+              "handle": "49F",
+              "value_mm": 2.0,
+              "measurement": 1.0,
+              "kind": "3",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            2.0,
+            3.0
+          ],
+          "geometry": {
+            "lines": 16,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              3.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              567.444,
+              256.3421415932362
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 11,
+          "name": "环槽",
+          "labels": [
+            "环槽_22直径_19槽宽_10与左端面距离_22直径_19槽宽_10与左端面距离_24根部"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 16,
+          "stated": [
+            {
+              "handle": "2E1",
+              "value_mm": 6.7,
+              "measurement": 19.19999999999999,
+              "kind": "直径",
+              "level": 1
+            },
+            {
+              "handle": "39A",
+              "value_mm": 4.1,
+              "measurement": 13.200000000000045,
+              "kind": "直径",
+              "level": 1
+            },
+            {
+              "handle": "46B",
+              "value_mm": 67.35,
+              "measurement": 202.5,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            4.1,
+            6.7,
+            67.35
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              5.4,
+              13.2
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              671.2227560660771,
+              334.2523417733009
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            8,
+            9
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 12,
+          "name": "总长",
+          "labels": [
+            "总长_11"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 2,
+          "stated": [
+            {
+              "handle": "34C",
+              "value_mm": 70.0,
+              "measurement": 210.0,
+              "kind": "1",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            70.0
+          ],
+          "geometry": {
+            "lines": 0,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": null,
+            "bbox": [
+              0.0,
+              0.0,
+              603.144,
+              347.57588504962575
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 13,
+          "name": "两端面",
+          "labels": [
+            "两端面"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 2,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 2,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              21.0,
+              27.0
+            ],
+            "bbox": [
+              393.1438401442308,
+              206.70617041346034,
+              603.1438401442308,
+              233.70617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 14,
+          "name": "两端面倒角",
+          "labels": [
+            "两端面倒角"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.121,
+              2.121
+            ],
+            "bbox": [
+              393.1438401442308,
+              205.20617041346034,
+              603.1438401442308,
+              235.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 15,
+          "name": "倒角",
+          "labels": [
+            "倒角_9与左端面距离_21"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 7,
+          "stated": [
+            {
+              "handle": "452",
+              "value_mm": 61.65,
+              "measurement": 184.5,
+              "kind": "与左端面距离",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            61.65
+          ],
+          "geometry": {
+            "lines": 2,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.121,
+              2.121
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              621.3355241891546,
+              318.8676325817829
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 16,
+          "name": "圆角",
+          "labels": [
+            "圆角_26"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 21,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 0,
+            "arcs": 18,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              2.356,
+              2.356
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              576.1438401442308,
+              233.70617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        }
+      ],
+      "feature_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "kept": [],
+      "changed": [],
+      "geometry_changed": [],
+      "redrawn": []
+    },
+    {
+      "step": 2,
+      "operation": "数控铣7",
+      "source": "3309-07-02数控铣7.json",
+      "scale": 3.0,
+      "features": [
+        {
+          "feature": 3,
+          "name": "外圆",
+          "labels": [
+            "外圆"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 27,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 27,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              9.0
+            ],
+            "bbox": [
+              394.6438401442308,
+              208.20617041346034,
+              574.6438401442308,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 4,
+          "name": "外圆",
+          "labels": [
+            "外圆"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.8,
+              6.0
+            ],
+            "bbox": [
+              577.6438401442308,
+              205.20617041346034,
+              601.6438401442308,
+              235.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            12
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 5,
+          "name": "环槽",
+          "labels": [
+            "环槽"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 10,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 6,
+            "arcs": 4,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              7.5
+            ],
+            "bbox": [
+              402.74384014423083,
+              208.20617041346034,
+              413.24384014423083,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 6,
+          "name": "环槽",
+          "labels": [
+            "环槽"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 10,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 6,
+            "arcs": 4,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              9.0
+            ],
+            "bbox": [
+              443.24384014423083,
+              208.20617041346034,
+              455.24384014423083,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 7,
+          "name": "环槽",
+          "labels": [
+            "环槽"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 10,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 6,
+            "arcs": 4,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              4.5
+            ],
+            "bbox": [
+              462.74384014423083,
+              208.20617041346034,
+              470.24384014423083,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 8,
+          "name": "环槽",
+          "labels": [
+            "环槽"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 10,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 6,
+            "arcs": 4,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              1.5,
+              56.7
+            ],
+            "bbox": [
+              492.74384014423083,
+              208.20617041346034,
+              552.4438401442308,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 9,
+          "name": "8处或9处环槽",
+          "labels": [
+            "8处或9处环槽"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 54,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 54,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              1.5,
+              3.0
+            ],
+            "bbox": [
+              419.24384014423083,
+              208.20617041346034,
+              570.4438401442308,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 10,
+          "name": "槽间距",
+          "labels": [
+            "槽间距"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 16,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 16,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              3.0
+            ],
+            "bbox": [
+              422.24384014423083,
+              208.20617041346034,
+              567.4438401442308,
+              232.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 11,
+          "name": "环槽",
+          "labels": [
+            "环槽"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 6,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 6,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              5.4,
+              13.2
+            ],
+            "bbox": [
+              582.4438401442308,
+              205.20617041346034,
+              595.6438401442308,
+              235.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            8,
+            9
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 12,
+          "name": "总长",
+          "labels": [
+            "总长"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 3,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 3,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              6.0,
+              21.0
+            ],
+            "bbox": [
+              393.1438401442308,
+              206.7061704134603,
+              603.1438401442308,
+              233.70617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 13,
+          "name": "两端面",
+          "labels": [
+            "两端面"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 3,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 3,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              6.0,
+              21.0
+            ],
+            "bbox": [
+              393.1438401442308,
+              206.7061704134603,
+              603.1438401442308,
+              233.70617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 14,
+          "name": "两端面倒角",
+          "labels": [
+            "两端面倒角"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.121,
+              2.121
+            ],
+            "bbox": [
+              393.1438401442308,
+              205.2061704134603,
+              603.1438401442308,
+              235.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 15,
+          "name": "倒角",
+          "labels": [
+            "倒角"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 2,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 2,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.121,
+              2.121
+            ],
+            "bbox": [
+              576.1438401442308,
+              205.20617041346034,
+              577.6438401442308,
+              235.20617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 16,
+          "name": "圆角",
+          "labels": [
+            "圆角"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 18,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 0,
+            "arcs": 18,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              2.356,
+              2.356
+            ],
+            "bbox": [
+              402.74384014423083,
+              206.70617041346034,
+              576.1438401442308,
+              233.70617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 17,
+          "name": "径向通孔",
+          "labels": [
+            "径向通孔_5直径_3与左端面距离"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 0,
+            "arcs": 0,
+            "circles": 1,
+            "radius_span": [
+              3.0,
+              3.0
+            ],
+            "length_span": [
+              18.85,
+              18.85
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              422.74384014423083,
+              243.61987794196716
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 18,
+          "name": "径向通孔",
+          "labels": [
+            "径向通孔_5直径_4与左端面距离"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 5,
+          "stated": [
+            {
+              "handle": "2D6",
+              "value_mm": 18.2,
+              "measurement": 54.599999999999966,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            18.2
+          ],
+          "geometry": {
+            "lines": 0,
+            "arcs": 0,
+            "circles": 1,
+            "radius_span": [
+              3.0,
+              3.0
+            ],
+            "length_span": [
+              18.85,
+              18.85
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              483.92370891571045,
+              256.21738099291804
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 19,
+          "name": "径向孔",
+          "labels": [
+            "径向孔_8直径_9深度_6与右端面距离"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 7,
+          "stated": [
+            {
+              "handle": "30A",
+              "value_mm": 44.95,
+              "measurement": 134.39999999999998,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            44.95
+          ],
+          "geometry": {
+            "lines": 0,
+            "arcs": 0,
+            "circles": 1,
+            "radius_span": [
+              0.45,
+              0.45
+            ],
+            "length_span": [
+              2.827,
+              2.827
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              603.144,
+              227.706
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 20,
+          "name": "右端面槽",
+          "labels": [
+            "右端面槽_1侧视图槽宽_7槽深"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 9,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 5,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              1.5,
+              22.45
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              603.144,
+              227.70617041346034
+            ]
+          },
+          "steps_seeing_it": [
+            2
+          ],
+          "introduced": true,
+          "persistent": false
+        }
+      ],
+      "feature_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "kept": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "changed": [],
+      "geometry_changed": [
+        3,
+        5,
+        12,
+        13
+      ],
+      "redrawn": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "step": 3,
+      "operation": "精车10",
+      "source": "3309-07-02精车10.json",
+      "scale": 3.0,
+      "features": [
+        {
+          "feature": 17,
+          "name": "径向通孔",
+          "labels": [
+            "径向通孔"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 8,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.5,
+              4.5
+            ],
+            "bbox": [
+              396.2800477526131,
+              481.0521550790924,
+              402.2800573976505,
+              499.0521581258213
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 18,
+          "name": "径向通孔",
+          "labels": [
+            "径向通孔"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 8,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.5,
+              4.5
+            ],
+            "bbox": [
+              436.7800477526131,
+              481.0521550790924,
+              442.7800573976505,
+              499.05215812582134
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 19,
+          "name": "径向孔",
+          "labels": [
+            "径向孔"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 5,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 2,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              6.0,
+              6.069
+            ],
+            "bbox": [
+              460.3300485668831,
+              493.01807610886516,
+              461.23006035903035,
+              499.1212469695131
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 21,
+          "name": "左孔",
+          "labels": [
+            "左孔_1直径_11深度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 11,
+          "stated": [
+            {
+              "handle": "359",
+              "value_mm": 19.5,
+              "measurement": 58.5,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            19.5
+          ],
+          "geometry": {
+            "lines": 7,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              5.25,
+              34.5
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              446.38392812216216,
+              494.55215557692316
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 22,
+          "name": "左孔口倒角",
+          "labels": [
+            "左孔口倒角_2角度_3深度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 10,
+          "stated": [
+            {
+              "handle": "30B",
+              "value_mm": 0.9,
+              "measurement": 2.785576211353032,
+              "kind": "角度",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            0.9
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              6.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              395.5723601819514,
+              531.3000813239539
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4,
+            6
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 23,
+          "name": "右孔",
+          "labels": [
+            "右孔_10直径_9深度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 10,
+          "stated": [
+            {
+              "handle": "371",
+              "value_mm": 45.5,
+              "measurement": 136.50000000000006,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            45.5
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              105.381
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              595.18,
+              493.05215557692316
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 24,
+          "name": "底孔",
+          "labels": [
+            "底孔_8深度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 8,
+          "stated": [
+            {
+              "handle": "389",
+              "value_mm": 10.0,
+              "measurement": 30.0,
+              "kind": "深度",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            10.0
+          ],
+          "geometry": {
+            "lines": 6,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.173,
+              27.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              595.18,
+              494.91515557692315
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 25,
+          "name": "底孔螺纹",
+          "labels": [
+            "底孔螺纹_6_7深度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 9,
+          "stated": [
+            {
+              "handle": "3A1",
+              "value_mm": 8.0,
+              "measurement": 24.0,
+              "kind": "深度",
+              "level": 1
+            },
+            {
+              "handle": "3B9",
+              "value_mm": -6.0,
+              "measurement": 4.0,
+              "kind": "深度",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            -6.0,
+            8.0
+          ],
+          "geometry": {
+            "lines": 5,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.274,
+              22.5
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              622.9733455657083,
+              496.05215557692316
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 26,
+          "name": "螺纹孔口倒角",
+          "labels": [
+            "螺纹孔口倒角_4深度_5角度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 8,
+          "stated": [
+            {
+              "handle": "325",
+              "value_mm": 0.9,
+              "measurement": 3.0,
+              "kind": "深度",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            0.9
+          ],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              1.732,
+              4.863
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              606.9343530821038,
+              525.0844591222493
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4,
+            6,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        }
+      ],
+      "feature_ids": [
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "kept": [
+        17,
+        18,
+        19
+      ],
+      "changed": [],
+      "geometry_changed": [
+        17,
+        18,
+        19
+      ],
+      "redrawn": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "step": 4,
+      "operation": "钳15",
+      "source": "3309-07-02钳15.json",
+      "scale": null,
+      "features": [
+        {
+          "feature": 17,
+          "name": "径向通孔",
+          "labels": [
+            "径向通孔_1去毛刺"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 11,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.5,
+              4.5
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              402.2800573976505,
+              514.3339469886422
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 18,
+          "name": "径向通孔",
+          "labels": [
+            "径向通孔_1去毛刺"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 13,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.5,
+              4.5
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              442.7800573976505,
+              521.3697392141395
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 19,
+          "name": "Φ0点3径向孔",
+          "labels": [
+            "Φ0点3径向孔_2去毛刺"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 10,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 2,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              6.0,
+              6.069
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              480.65270447617195,
+              528.3481605016544
+            ]
+          },
+          "steps_seeing_it": [
+            2,
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 21,
+          "name": "左孔",
+          "labels": [
+            "左孔"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 8,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 7,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              5.25,
+              34.5
+            ],
+            "bbox": [
+              365.2564478550586,
+              485.552,
+              446.38392812216216,
+              494.55215557692316
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 22,
+          "name": "左孔口倒角",
+          "labels": [
+            "左孔口倒角"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              4.5
+            ],
+            "bbox": [
+              385.18005533653815,
+              484.05215557692316,
+              387.77813154789146,
+              496.05215557692316
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4,
+            6
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 23,
+          "name": "右孔",
+          "labels": [
+            "右孔"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 7,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 5,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              1.65,
+              105.381
+            ],
+            "bbox": [
+              456.8774734794554,
+              441.3029254157901,
+              564.0606520032898,
+              493.05215561174964
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 24,
+          "name": "底孔",
+          "labels": [
+            "底孔"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 6,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 6,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.173,
+              27.0
+            ],
+            "bbox": [
+              564.0606520032898,
+              485.18915557692316,
+              592.1800553365381,
+              494.91515557692315
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 25,
+          "name": "底孔螺纹",
+          "labels": [
+            "底孔螺纹_3去毛刺"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 7,
+          "stated": [
+            {
+              "handle": "357",
+              "value_mm": -6.0,
+              "measurement": 4.0,
+              "kind": "去毛刺",
+              "level": 0
+            }
+          ],
+          "values_mm": [
+            -6.0
+          ],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              2.274,
+              22.5
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              614.1225602561444,
+              525.4047396522491
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 26,
+          "name": "螺纹孔口倒角",
+          "labels": [
+            "螺纹孔口倒角"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              1.732,
+              4.863
+            ],
+            "bbox": [
+              592.1800553365381,
+              484.32313017313874,
+              593.6800553365381,
+              495.7811809807076
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4,
+            6,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 27,
+          "name": "右端面槽边",
+          "labels": [
+            "右端面槽边_4去毛刺"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 8,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 0,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": null,
+            "bbox": [
+              0.0,
+              0.0,
+              595.1800553365381,
+              522.7107981299622
+            ]
+          },
+          "steps_seeing_it": [
+            4
+          ],
+          "introduced": true,
+          "persistent": false
+        }
+      ],
+      "feature_ids": [
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "kept": [
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        26
+      ],
+      "changed": [
+        25
+      ],
+      "geometry_changed": [
+        22,
+        23,
+        25
+      ],
+      "redrawn": [
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "step": 5,
+      "operation": "热处理20",
+      "source": "3309-07-02热处理20.json",
+      "scale": null,
+      "features": [],
+      "feature_ids": [],
+      "kept": [],
+      "changed": [],
+      "geometry_changed": [],
+      "redrawn": []
+    },
+    {
+      "step": 6,
+      "operation": "车研25",
+      "source": "3309-07-02车研25.json",
+      "scale": null,
+      "features": [
+        {
+          "feature": 22,
+          "name": "左孔口倒角",
+          "labels": [
+            "左孔口倒角"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 6,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 5,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              27.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              415.4275834228918,
+              611.3380528846155
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4,
+            6
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 26,
+          "name": "右孔口倒角",
+          "labels": [
+            "右孔口倒角"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 6,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 5,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              1.732,
+              24.101
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              640.2124028599786,
+              623.126087894037
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4,
+            6,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        }
+      ],
+      "feature_ids": [
+        22,
+        26
+      ],
+      "kept": [
+        22,
+        26
+      ],
+      "changed": [],
+      "geometry_changed": [
+        22,
+        26
+      ],
+      "redrawn": [
+        22,
+        26
+      ]
+    },
+    {
+      "step": 7,
+      "operation": "外磨30",
+      "source": "3309-07-02外磨30.json",
+      "scale": null,
+      "features": [
+        {
+          "feature": 3,
+          "name": "外圆",
+          "labels": [
+            "外圆_1直径_2粗糙度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 34,
+          "stated": [
+            {
+              "handle": "336",
+              "value_mm": 8.25,
+              "measurement": 24.0,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            8.25
+          ],
+          "geometry": {
+            "lines": 28,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              9.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              594.33,
+              617.3380528846155
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 4,
+          "name": "外圆",
+          "labels": [
+            "外圆_6直径_5粗糙度_4同心度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 11,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.8,
+              6.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              652.274543098326,
+              642.4884541387389
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            12
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 16,
+          "name": "台肩根部圆角",
+          "labels": [
+            "台肩根部圆角_3半径"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 5,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 0,
+            "arcs": 2,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              2.356,
+              2.356
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              595.8295072115386,
+              625.6898439619513
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 28,
+          "name": "台肩",
+          "labels": [
+            "台肩_7"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 6,
+          "stated": [
+            {
+              "handle": "36C",
+              "value_mm": 61.0,
+              "measurement": 183.0,
+              "kind": null,
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            61.0
+          ],
+          "geometry": {
+            "lines": 2,
+            "arcs": 2,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              2.121,
+              2.356
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              597.3295072115385,
+              620.3380528846155
+            ]
+          },
+          "steps_seeing_it": [
+            7
+          ],
+          "introduced": true,
+          "persistent": false
+        }
+      ],
+      "feature_ids": [
+        3,
+        4,
+        16,
+        28
+      ],
+      "kept": [
+        3,
+        4,
+        16
+      ],
+      "changed": [],
+      "geometry_changed": [
+        3,
+        16
+      ],
+      "redrawn": [
+        3,
+        4,
+        16
+      ]
+    },
+    {
+      "step": 8,
+      "operation": "螺纹磨35",
+      "source": "3309-07-02螺纹磨35.json",
+      "scale": 3.0,
+      "features": [
+        {
+          "feature": 3,
+          "name": "外圆",
+          "labels": [
+            "外圆"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 28,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 28,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              9.0
+            ],
+            "bbox": [
+              414.3295072115385,
+              593.3380528846155,
+              594.3295072115386,
+              617.3380528846155
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 4,
+          "name": "外圆",
+          "labels": [
+            "外圆"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 7,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              4.8,
+              6.0
+            ],
+            "bbox": [
+              597.3295072115385,
+              590.338,
+              664.3607572115384,
+              633.9467409913848
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            12
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 11,
+          "name": "密封槽",
+          "labels": [
+            "密封槽_1直径_6槽宽_7与左端面距离_2槽底粗糙度_4槽面粗糙度_5槽面粗糙度_9根部_8槽口_3同心度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 30,
+          "stated": [
+            {
+              "handle": "3C3",
+              "value_mm": 67.5,
+              "measurement": 202.4999999999999,
+              "kind": "直径",
+              "level": 1
+            }
+          ],
+          "values_mm": [
+            67.5
+          ],
+          "geometry": {
+            "lines": 7,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              0.0,
+              13.2
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              615.33,
+              660.2664247291269
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            8,
+            9
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 16,
+          "name": "台肩根部圆角",
+          "labels": [
+            "台肩根部圆角"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 2,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 0,
+            "arcs": 2,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              2.356,
+              2.356
+            ],
+            "bbox": [
+              594.3295072115386,
+              591.8380528846155,
+              595.8295072115386,
+              618.8380528846155
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 26,
+          "name": "台肩",
+          "labels": [
+            "台肩"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 2,
+            "arcs": 2,
+            "circles": 0,
+            "radius_span": [
+              1.5,
+              1.5
+            ],
+            "length_span": [
+              2.121,
+              2.356
+            ],
+            "bbox": [
+              594.3295072115386,
+              590.3380528846155,
+              597.3295072115385,
+              620.3380528846155
+            ]
+          },
+          "steps_seeing_it": [
+            3,
+            4,
+            6,
+            8
+          ],
+          "introduced": false,
+          "persistent": true
+        }
+      ],
+      "feature_ids": [
+        3,
+        4,
+        11,
+        16,
+        26
+      ],
+      "kept": [
+        3,
+        4,
+        11,
+        16,
+        26
+      ],
+      "changed": [],
+      "geometry_changed": [
+        11,
+        26
+      ],
+      "redrawn": [
+        3,
+        4,
+        11,
+        16,
+        26
+      ]
+    },
+    {
+      "step": 9,
+      "operation": "热处理40",
+      "source": "3309-07-02热处理40.json",
+      "scale": null,
+      "features": [
+        {
+          "feature": 11,
+          "name": "密封槽",
+          "labels": [
+            "密封槽"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 4,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 4,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              13.2,
+              30.0
+            ],
+            "bbox": [
+              564.8303485576923,
+              542.2635817307693,
+              578.0303485576924,
+              572.2635817307693
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            8,
+            9
+          ],
+          "introduced": false,
+          "persistent": true
+        }
+      ],
+      "feature_ids": [
+        11
+      ],
+      "kept": [
+        11
+      ],
+      "changed": [],
+      "geometry_changed": [
+        11
+      ],
+      "redrawn": [
+        11
+      ]
+    },
+    {
+      "step": 10,
+      "operation": "车45",
+      "source": "3309-07-02车45.json",
+      "scale": null,
+      "features": [
+        {
+          "feature": 29,
+          "name": "回转棱边",
+          "labels": [
+            "回转棱边_1去毛刺_2去毛刺"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 34,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 0,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": null,
+            "bbox": [
+              0.0,
+              -84.88263082034325,
+              651.3760516826923,
+              645.5774996795677
+            ]
+          },
+          "steps_seeing_it": [
+            10
+          ],
+          "introduced": true,
+          "persistent": false
+        }
+      ],
+      "feature_ids": [
+        29
+      ],
+      "kept": [],
+      "changed": [],
+      "geometry_changed": [],
+      "redrawn": []
+    },
+    {
+      "step": 11,
+      "operation": "钳50",
+      "source": "3309-07-02钳50.json",
+      "scale": 3.0,
+      "features": [],
+      "feature_ids": [],
+      "kept": [],
+      "changed": [],
+      "geometry_changed": [],
+      "redrawn": []
+    },
+    {
+      "step": 12,
+      "operation": "车研55",
+      "source": "3309-07-02车研55.json",
+      "scale": null,
+      "features": [
+        {
+          "feature": 4,
+          "name": "外圆",
+          "labels": [
+            "外圆_3直径_2粗糙度_1圆柱度"
+          ],
+          "levels": [
+            1
+          ],
+          "entity_count": 12,
+          "stated": [],
+          "values_mm": [],
+          "geometry": {
+            "lines": 5,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              0.0,
+              6.0
+            ],
+            "bbox": [
+              0.0,
+              0.0,
+              633.6123940146156,
+              583.2227219380769
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            12
+          ],
+          "introduced": false,
+          "persistent": true
+        }
+      ],
+      "feature_ids": [
+        4
+      ],
+      "kept": [
+        4
+      ],
+      "changed": [],
+      "geometry_changed": [
+        4
+      ],
+      "redrawn": [
+        4
+      ]
+    },
+    {
+      "step": 13,
+      "operation": "表面处理65",
+      "source": "3309-07-02表面处理65.json",
+      "scale": null,
+      "features": [
+        {
+          "feature": 3,
+          "name": "最终外圆直径",
+          "labels": [
+            "最终外圆直径"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 27,
+          "stated": [
+            {
+              "handle": "26E",
+              "value_mm": 8.25,
+              "measurement": 24.000000000000057,
+              "kind": null,
+              "level": 0
+            }
+          ],
+          "values_mm": [
+            8.25
+          ],
+          "geometry": {
+            "lines": 26,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              3.0,
+              9.6
+            ],
+            "bbox": [
+              364.4822407718886,
+              489.74585625000003,
+              572.3147149038459,
+              513.746
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            7,
+            8,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        },
+        {
+          "feature": 12,
+          "name": "最终总长",
+          "labels": [
+            "最终总长"
+          ],
+          "levels": [
+            0
+          ],
+          "entity_count": 6,
+          "stated": [
+            {
+              "handle": "253",
+              "value_mm": 70.0,
+              "measurement": 209.9999999999999,
+              "kind": null,
+              "level": 0
+            }
+          ],
+          "values_mm": [
+            70.0
+          ],
+          "geometry": {
+            "lines": 5,
+            "arcs": 0,
+            "circles": 0,
+            "radius_span": null,
+            "length_span": [
+              6.0,
+              22.45
+            ],
+            "bbox": [
+              390.8147149038458,
+              470.7135891885993,
+              600.815,
+              513.7458562500001
+            ]
+          },
+          "steps_seeing_it": [
+            1,
+            2,
+            13
+          ],
+          "introduced": false,
+          "persistent": true
+        }
+      ],
+      "feature_ids": [
+        3,
+        12
+      ],
+      "kept": [
+        3,
+        12
+      ],
+      "changed": [],
+      "geometry_changed": [
+        3,
+        12
+      ],
+      "redrawn": [
+        3,
+        12
+      ]
+    }
+  ],
+  "feature_registry": {
+    "1": {
+      "steps": [
+        0
+      ],
+      "persistent": false
+    },
+    "2": {
+      "steps": [
+        0
+      ],
+      "persistent": false
+    },
+    "3": {
+      "steps": [
+        1,
+        2,
+        7,
+        8,
+        13
+      ],
+      "persistent": true
+    },
+    "4": {
+      "steps": [
+        1,
+        2,
+        7,
+        8,
+        12
+      ],
+      "persistent": true
+    },
+    "5": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "6": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "7": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "8": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "9": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "10": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "11": {
+      "steps": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "persistent": true
+    },
+    "12": {
+      "steps": [
+        1,
+        2,
+        13
+      ],
+      "persistent": true
+    },
+    "13": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "14": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "15": {
+      "steps": [
+        1,
+        2
+      ],
+      "persistent": true
+    },
+    "16": {
+      "steps": [
+        1,
+        2,
+        7,
+        8
+      ],
+      "persistent": true
+    },
+    "17": {
+      "steps": [
+        2,
+        3,
+        4
+      ],
+      "persistent": true
+    },
+    "18": {
+      "steps": [
+        2,
+        3,
+        4
+      ],
+      "persistent": true
+    },
+    "19": {
+      "steps": [
+        2,
+        3,
+        4
+      ],
+      "persistent": true
+    },
+    "20": {
+      "steps": [
+        2
+      ],
+      "persistent": false
+    },
+    "21": {
+      "steps": [
+        3,
+        4
+      ],
+      "persistent": true
+    },
+    "22": {
+      "steps": [
+        3,
+        4,
+        6
+      ],
+      "persistent": true
+    },
+    "23": {
+      "steps": [
+        3,
+        4
+      ],
+      "persistent": true
+    },
+    "24": {
+      "steps": [
+        3,
+        4
+      ],
+      "persistent": true
+    },
+    "25": {
+      "steps": [
+        3,
+        4
+      ],
+      "persistent": true
+    },
+    "26": {
+      "steps": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "persistent": true
+    },
+    "27": {
+      "steps": [
+        4
+      ],
+      "persistent": false
+    },
+    "28": {
+      "steps": [
+        7
+      ],
+      "persistent": false
+    },
+    "29": {
+      "steps": [
+        10
+      ],
+      "persistent": false
+    }
+  },
+  "summary": {
+    "steps": 14,
+    "features": 29,
+    "persistent_features": 23,
+    "step_introduced": 6,
+    "changes": 1,
+    "geometry_changes": 20,
+    "kept": 39
+  },
+  "consistency_issues": []
+}

@@ -1,0 +1,2845 @@
+{
+  "schema_version": "farmcad-l3-v2",
+  "case_id": "2798Z-01-03",
+  "design": {
+    "path": "设计图\\geo\\设计图\\2798Z-01-03.json",
+    "entities": 2255,
+    "scale": 8.0,
+    "radial_profile": {
+      "scale": 8.0,
+      "radii": {
+        "8.14": 1,
+        "5.18": 1,
+        "5.09": 1,
+        "4.39": 1,
+        "4.07": 1,
+        "2.59": 1,
+        "2.55": 1,
+        "2.21": 1,
+        "2.2": 1
+      },
+      "distinct": 9,
+      "total": 9,
+      "max": 8.14
+    },
+    "dimensions": [
+      {
+        "handle": "932",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 2.0,
+        "stored": 0.9240000000000066,
+        "span": 0.9239999999999924,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "952",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 65.9,
+        "stored": 263.6,
+        "span": 263.6,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "96F",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 51.8,
+        "stored": 207.19999999999996,
+        "span": 207.2,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "98C",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 40.0,
+        "stored": 159.99999999999997,
+        "span": 160.0,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "9E4",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 4.0,
+        "stored": 0.09999999999999873,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "A00",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 4.0,
+        "stored": 0.2000000000000014,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "A19",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 16.0,
+        "stored": 0.09999999999999298,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "A32",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 16.0,
+        "stored": 0.20000000000000664,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "A4D",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 6.0,
+        "stored": 0.09999999999999935,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "A64",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 6.0,
+        "stored": 0.19999999999999998,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "A82",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 1.65,
+        "stored": 13.199999999999989,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "A8F",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 2.75,
+        "stored": 22.0,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "AA1",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 2.8,
+        "stored": 22.400000000000034,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "AAE",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 3.9,
+        "stored": 31.200000000000045,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "ABB",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 5.0,
+        "stored": 40.0,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "ACD",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 2.8,
+        "stored": 22.39999999999999,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "ADA",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 3.9,
+        "stored": 31.200000000000003,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "AE7",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 5.0,
+        "stored": 40.0,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "AF9",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 2.6,
+        "stored": 20.799999999999955,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "B06",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 3.7,
+        "stored": 29.600000000000023,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "B13",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 4.8,
+        "stored": 38.40000000000009,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "B20",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 5.9,
+        "stored": 47.19999999999993,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "B2D",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 7.7,
+        "stored": 61.60000000000002,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "B3A",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 8.8,
+        "stored": 70.39999999999998,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "B47",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 9.9,
+        "stored": 79.20000000000005,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "B54",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "value_mm": 11.0,
+        "stored": 88.0,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "BB0",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 6.0,
+        "stored": 0.09999999999999985,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "BCA",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "value_mm": 6.0,
+        "stored": 0.199999999999999,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "BE4",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 3.0,
+        "stored": 4.0,
+        "span": 4.0,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "C1E",
+        "layer": "1",
+        "dim_type": "AcDb2LineAngularDimension",
+        "value_mm": 2.0,
+        "stored": 1.0471975511966176,
+        "span": null,
+        "annotates_geometry": false
+      },
+      {
+        "handle": "C40",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 3.0,
+        "stored": 4.0,
+        "span": 4.0,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "C60",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 19.0,
+        "stored": 76.0,
+        "span": 75.99999999999999,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "C7D",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 8.0,
+        "stored": 4.0,
+        "span": 4.0,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "C9D",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 3.0,
+        "stored": 4.000000000000014,
+        "span": 4.0,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "CBD",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 7.2,
+        "stored": 28.80000000000001,
+        "span": 28.799999999999997,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "CDA",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 4.9,
+        "stored": 19.599999999999994,
+        "span": 19.599999999999994,
+        "annotates_geometry": true
+      },
+      {
+        "handle": "CF7",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "value_mm": 14.1,
+        "stored": 56.39999999999998,
+        "span": 56.39999999999998,
+        "annotates_geometry": true
+      }
+    ],
+    "dimension_truth": [
+      {
+        "index": 1829,
+        "handle": "932",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 0.9240000000000066,
+        "span": 0.9239999999999924,
+        "orientation": 0.0,
+        "drawn_value": 2.0,
+        "truth_mm": 0.11550000000000082,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1830,
+        "handle": "952",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 263.6,
+        "span": 263.6,
+        "orientation": 0.0,
+        "drawn_value": 65.9,
+        "truth_mm": 32.95,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1831,
+        "handle": "96F",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 207.19999999999996,
+        "span": 207.2,
+        "orientation": 0.0,
+        "drawn_value": 51.8,
+        "truth_mm": 25.899999999999995,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1832,
+        "handle": "98C",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 159.99999999999997,
+        "span": 160.0,
+        "orientation": 0.0,
+        "drawn_value": 40.0,
+        "truth_mm": 19.999999999999996,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1833,
+        "handle": "9A9",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 5.599999999999994,
+        "span": 22.399999999999977,
+        "orientation": 1.57,
+        "drawn_value": null,
+        "truth_mm": null,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1834,
+        "handle": "9C6",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 5.900000000000006,
+        "span": 23.600000000000023,
+        "orientation": 1.57,
+        "drawn_value": null,
+        "truth_mm": null,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1835,
+        "handle": "9E4",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.09999999999999873,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 4.0,
+        "truth_mm": 0.012499999999999841,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1836,
+        "handle": "A00",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.2000000000000014,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 4.0,
+        "truth_mm": 0.025000000000000175,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1837,
+        "handle": "A19",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.09999999999999298,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 16.0,
+        "truth_mm": 0.012499999999999123,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1838,
+        "handle": "A32",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.20000000000000664,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 16.0,
+        "truth_mm": 0.02500000000000083,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1839,
+        "handle": "A4D",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.09999999999999935,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 6.0,
+        "truth_mm": 0.01249999999999992,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1840,
+        "handle": "A64",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.19999999999999998,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 6.0,
+        "truth_mm": 0.024999999999999998,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1842,
+        "handle": "A82",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 13.199999999999989,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 1.65,
+        "truth_mm": 1.6499999999999986,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1843,
+        "handle": "A8F",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 22.0,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 2.75,
+        "truth_mm": 2.75,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1845,
+        "handle": "AA1",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 22.400000000000034,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 2.8,
+        "truth_mm": 2.8000000000000043,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1846,
+        "handle": "AAE",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 31.200000000000045,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 3.9,
+        "truth_mm": 3.9000000000000057,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1847,
+        "handle": "ABB",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 40.0,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 5.0,
+        "truth_mm": 5.0,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1849,
+        "handle": "ACD",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 22.39999999999999,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 2.8,
+        "truth_mm": 2.799999999999999,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1850,
+        "handle": "ADA",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 31.200000000000003,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 3.9,
+        "truth_mm": 3.9000000000000004,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1851,
+        "handle": "AE7",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 40.0,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 5.0,
+        "truth_mm": 5.0,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1853,
+        "handle": "AF9",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 20.799999999999955,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 2.6,
+        "truth_mm": 2.5999999999999943,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1854,
+        "handle": "B06",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 29.600000000000023,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 3.7,
+        "truth_mm": 3.700000000000003,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1855,
+        "handle": "B13",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 38.40000000000009,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 4.8,
+        "truth_mm": 4.800000000000011,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1856,
+        "handle": "B20",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 47.19999999999993,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 5.9,
+        "truth_mm": 5.8999999999999915,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1857,
+        "handle": "B2D",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 61.60000000000002,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 7.7,
+        "truth_mm": 7.700000000000003,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1858,
+        "handle": "B3A",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 70.39999999999998,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 8.8,
+        "truth_mm": 8.799999999999997,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1859,
+        "handle": "B47",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 79.20000000000005,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 9.9,
+        "truth_mm": 9.900000000000006,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1860,
+        "handle": "B54",
+        "layer": "1",
+        "dim_type": "AcDbOrdinateDimension",
+        "measurement": 88.0,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 11.0,
+        "truth_mm": 11.0,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1863,
+        "handle": "B73",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 7.200000000000017,
+        "span": 28.80000000000001,
+        "orientation": 0.0,
+        "drawn_value": null,
+        "truth_mm": null,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1864,
+        "handle": "B90",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 6.5,
+        "span": 26.0,
+        "orientation": 1.57,
+        "drawn_value": null,
+        "truth_mm": null,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1865,
+        "handle": "BB0",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.09999999999999985,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 6.0,
+        "truth_mm": 0.012499999999999982,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1866,
+        "handle": "BCA",
+        "layer": "1",
+        "dim_type": "AcDbRadialDimension",
+        "measurement": 0.199999999999999,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 6.0,
+        "truth_mm": 0.024999999999999876,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1867,
+        "handle": "BE4",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 4.0,
+        "span": 4.0,
+        "orientation": 0.0,
+        "drawn_value": 3.0,
+        "truth_mm": 0.5,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1868,
+        "handle": "C00",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 3.5999999999999943,
+        "span": 14.399999999999977,
+        "orientation": 1.57,
+        "drawn_value": null,
+        "truth_mm": null,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1869,
+        "handle": "C1E",
+        "layer": "1",
+        "dim_type": "AcDb2LineAngularDimension",
+        "measurement": 1.0471975511966176,
+        "span": null,
+        "orientation": null,
+        "drawn_value": 2.0,
+        "truth_mm": 0.1308996938995772,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      },
+      {
+        "index": 1870,
+        "handle": "C40",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 4.0,
+        "span": 4.0,
+        "orientation": 0.0,
+        "drawn_value": 3.0,
+        "truth_mm": 0.5,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1871,
+        "handle": "C60",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 76.0,
+        "span": 75.99999999999999,
+        "orientation": 0.0,
+        "drawn_value": 19.0,
+        "truth_mm": 9.5,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1872,
+        "handle": "C7D",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 4.0,
+        "span": 4.0,
+        "orientation": 0.0,
+        "drawn_value": 8.0,
+        "truth_mm": 0.5,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1873,
+        "handle": "C9D",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 4.000000000000014,
+        "span": 4.0,
+        "orientation": 0.0,
+        "drawn_value": 3.0,
+        "truth_mm": 0.5000000000000018,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1874,
+        "handle": "CBD",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 28.80000000000001,
+        "span": 28.799999999999997,
+        "orientation": 0.0,
+        "drawn_value": 7.2,
+        "truth_mm": 3.6000000000000014,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1875,
+        "handle": "CDA",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 19.599999999999994,
+        "span": 19.599999999999994,
+        "orientation": 0.0,
+        "drawn_value": 4.9,
+        "truth_mm": 2.4499999999999993,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1876,
+        "handle": "CF7",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 56.39999999999998,
+        "span": 56.39999999999998,
+        "orientation": 0.0,
+        "drawn_value": 14.1,
+        "truth_mm": 7.049999999999997,
+        "scale": 8.0,
+        "measurement_matches_span": true
+      },
+      {
+        "index": 1877,
+        "handle": "D14",
+        "layer": "1",
+        "dim_type": "AcDbRotatedDimension",
+        "measurement": 4.8999999999999915,
+        "span": 19.599999999999966,
+        "orientation": 0.0,
+        "drawn_value": null,
+        "truth_mm": null,
+        "scale": 8.0,
+        "measurement_matches_span": false
+      }
+    ]
+  },
+  "operations": [
+    {
+      "state_id": "2798Z-01-03#S00",
+      "step_index": 0,
+      "operation": "下料0",
+      "route": [
+        "下料0"
+      ],
+      "operation_kind": "neutral",
+      "machining": false,
+      "entities": 1144,
+      "scale": 3.0,
+      "radial_profile": {
+        "scale": 3.0,
+        "radii": {},
+        "distinct": 0,
+        "total": 0,
+        "max": 0.0
+      },
+      "dimensions": [
+        {
+          "handle": "52B",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 6.7,
+          "stored": 19.5,
+          "span": 19.5,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "546",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 7.2,
+          "stored": 21.600000000000023,
+          "span": 23.69857590658136,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "4F7",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 65.9,
+          "stored": 197.70000000000005,
+          "span": 197.70000000000005,
+          "annotates_geometry": true
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 65.9,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.2,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "nominal_value_mm": 6.0,
+          "stated_value_mm": 6.7,
+          "delta_mm": 0.7
+        }
+      ],
+      "kept": [
+        "952",
+        "CBD"
+      ],
+      "changed": [
+        {
+          "source_handle": "52B",
+          "target_handle": "A4D",
+          "nominal_value_mm": 6.0,
+          "stated_value_mm": 6.7,
+          "delta_mm": 0.7,
+          "relative": 0.116667
+        }
+      ],
+      "introduced": [],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "932",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AA1",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "AAE",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "ABB",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "ADA",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B06",
+          "value_mm": 3.7
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "C40",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C7D",
+          "value_mm": 8.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    },
+    {
+      "state_id": "2798Z-01-03#S01",
+      "step_index": 1,
+      "operation": "数控车5",
+      "route": [
+        "数控车5"
+      ],
+      "operation_kind": "removing",
+      "machining": true,
+      "entities": 1696,
+      "scale": 5.0,
+      "radial_profile": {
+        "scale": 5.0,
+        "radii": {
+          "9.67": 1,
+          "5.99": 1,
+          "5.8": 1,
+          "5.41": 1,
+          "5.31": 1,
+          "3.59": 1,
+          "3.25": 1,
+          "3.18": 2
+        },
+        "distinct": 8,
+        "total": 9,
+        "max": 9.67
+      },
+      "dimensions": [
+        {
+          "handle": "84D",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 2.0,
+          "stored": 0.5,
+          "span": 2.5,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "93B",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 8.0,
+          "stored": 0.5,
+          "span": 2.5,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "815",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 3.0,
+          "stored": 0.5,
+          "span": 2.5,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "906",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 3.9,
+          "stored": 19.500000000000114,
+          "span": 25.066162450602604,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "832",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 2.8,
+          "stored": 14.000000000000114,
+          "span": 21.072790512886517,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "A22",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 5.0,
+          "stored": 25.000000000000057,
+          "span": 29.547631038714474,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "792",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 7.0,
+          "stored": 19.5,
+          "span": 19.5,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "8D1",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 2.8,
+          "stored": 13.999999999999943,
+          "span": 21.072790512886517,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "7FB",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 3.9,
+          "stored": 19.499999999999943,
+          "span": 25.066162450602604,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "7DE",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 3.0,
+          "stored": 0.5,
+          "span": 2.5,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "70E",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 2.0,
+          "stored": 0.6000000000000227,
+          "span": 0.848528137423849,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "89F",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 65.95,
+          "stored": 197.70000000000005,
+          "span": 197.69999999999993,
+          "annotates_geometry": true
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 65.95,
+          "delta_mm": 0.05
+        },
+        {
+          "nominal_handle": "C7D",
+          "nominal_value_mm": 8.0,
+          "stated_value_mm": 8.0,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.0,
+          "delta_mm": -0.2
+        },
+        {
+          "nominal_handle": "ABB",
+          "nominal_value_mm": 5.0,
+          "stated_value_mm": 5.0,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "AAE",
+          "nominal_value_mm": 3.9,
+          "stated_value_mm": 3.9,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "ADA",
+          "nominal_value_mm": 3.9,
+          "stated_value_mm": 3.9,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "nominal_value_mm": 3.0,
+          "stated_value_mm": 3.0,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "C40",
+          "nominal_value_mm": 3.0,
+          "stated_value_mm": 3.0,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "AA1",
+          "nominal_value_mm": 2.8,
+          "stated_value_mm": 2.8,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "nominal_value_mm": 2.8,
+          "stated_value_mm": 2.8,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "932",
+          "nominal_value_mm": 2.0,
+          "stated_value_mm": 2.0,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "nominal_value_mm": 2.0,
+          "stated_value_mm": 2.0,
+          "delta_mm": 0.0
+        }
+      ],
+      "kept": [
+        "C7D",
+        "ABB",
+        "AAE",
+        "ADA",
+        "BE4",
+        "C40",
+        "AA1",
+        "ACD",
+        "932",
+        "C1E"
+      ],
+      "changed": [
+        {
+          "source_handle": "89F",
+          "target_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 65.95,
+          "delta_mm": 0.05,
+          "relative": 0.000759
+        },
+        {
+          "source_handle": "792",
+          "target_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.0,
+          "delta_mm": -0.2,
+          "relative": -0.027778
+        }
+      ],
+      "introduced": [],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B06",
+          "value_mm": 3.7
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    },
+    {
+      "state_id": "2798Z-01-03#S02",
+      "step_index": 2,
+      "operation": "精车10",
+      "route": [
+        "精车10",
+        "热处理15"
+      ],
+      "operation_kind": "removing",
+      "machining": true,
+      "entities": 912,
+      "scale": null,
+      "radial_profile": {
+        "scale": null,
+        "radii": {
+          "29.38": 1
+        },
+        "distinct": 1,
+        "total": 1,
+        "max": 29.38
+      },
+      "dimensions": [
+        {
+          "handle": "422",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 2.0,
+          "stored": 3.866735824365624,
+          "span": 11.599999999999966,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "408",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 7.0,
+          "stored": 19.5,
+          "span": 19.5,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "43E",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 2.0,
+          "stored": 1.9999999998,
+          "span": 6.0,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "3D2",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 66.0,
+          "stored": 197.70000000000005,
+          "span": 197.70000000000005,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "3EC",
+          "layer": "1",
+          "dim_type": "AcDb2LineAngularDimension",
+          "value_mm": 2.0,
+          "stored": 0.5235987755983285,
+          "span": null,
+          "annotates_geometry": false
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 66.0,
+          "delta_mm": 0.1
+        },
+        {
+          "nominal_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.0,
+          "delta_mm": -0.2
+        },
+        {
+          "nominal_handle": "932",
+          "nominal_value_mm": 2.0,
+          "stated_value_mm": 2.0,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "nominal_value_mm": 2.0,
+          "stated_value_mm": 2.0,
+          "delta_mm": 0.0
+        }
+      ],
+      "kept": [
+        "932",
+        "C1E"
+      ],
+      "changed": [
+        {
+          "source_handle": "3D2",
+          "target_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 66.0,
+          "delta_mm": 0.1,
+          "relative": 0.001517
+        },
+        {
+          "source_handle": "408",
+          "target_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.0,
+          "delta_mm": -0.2,
+          "relative": -0.027778
+        }
+      ],
+      "introduced": [
+        {
+          "value_mm": 2.0,
+          "handle": "3EC"
+        }
+      ],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AA1",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "AAE",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "ABB",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "ADA",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B06",
+          "value_mm": 3.7
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C40",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C7D",
+          "value_mm": 8.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    },
+    {
+      "state_id": "2798Z-01-03#S03",
+      "step_index": 3,
+      "operation": "车研20",
+      "route": [
+        "车研20"
+      ],
+      "operation_kind": "removing",
+      "machining": true,
+      "entities": 884,
+      "scale": null,
+      "radial_profile": {
+        "scale": null,
+        "radii": {},
+        "distinct": 0,
+        "total": 0,
+        "max": 0.0
+      },
+      "dimensions": [
+        {
+          "handle": "3D6",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 66.0,
+          "stored": 197.70000000000005,
+          "span": 197.70000000000005,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "3F0",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 7.0,
+          "stored": 19.5,
+          "span": 19.5,
+          "annotates_geometry": true
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 66.0,
+          "delta_mm": 0.1
+        },
+        {
+          "nominal_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.0,
+          "delta_mm": -0.2
+        }
+      ],
+      "kept": [],
+      "changed": [
+        {
+          "source_handle": "3D6",
+          "target_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 66.0,
+          "delta_mm": 0.1,
+          "relative": 0.001517
+        },
+        {
+          "source_handle": "3F0",
+          "target_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.0,
+          "delta_mm": -0.2,
+          "relative": -0.027778
+        }
+      ],
+      "introduced": [],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "932",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AA1",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "AAE",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "ABB",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "ADA",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B06",
+          "value_mm": 3.7
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "C40",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C7D",
+          "value_mm": 8.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    },
+    {
+      "state_id": "2798Z-01-03#S04",
+      "step_index": 4,
+      "operation": "外磨25",
+      "route": [
+        "外磨25",
+        "热处理30"
+      ],
+      "operation_kind": "removing",
+      "machining": true,
+      "entities": 1144,
+      "scale": 3.0,
+      "radial_profile": {
+        "scale": 3.0,
+        "radii": {},
+        "distinct": 0,
+        "total": 0,
+        "max": 0.0
+      },
+      "dimensions": [
+        {
+          "handle": "52B",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 6.7,
+          "stored": 19.5,
+          "span": 19.5,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "546",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 7.2,
+          "stored": 21.600000000000023,
+          "span": 23.69857590658136,
+          "annotates_geometry": false
+        },
+        {
+          "handle": "4F7",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 65.9,
+          "stored": 197.70000000000005,
+          "span": 197.70000000000005,
+          "annotates_geometry": true
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 65.9,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 7.2,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "nominal_value_mm": 6.0,
+          "stated_value_mm": 6.7,
+          "delta_mm": 0.7
+        }
+      ],
+      "kept": [
+        "952",
+        "CBD"
+      ],
+      "changed": [
+        {
+          "source_handle": "52B",
+          "target_handle": "A4D",
+          "nominal_value_mm": 6.0,
+          "stated_value_mm": 6.7,
+          "delta_mm": 0.7,
+          "relative": 0.116667
+        }
+      ],
+      "introduced": [],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "932",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AA1",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "AAE",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "ABB",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "ADA",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B06",
+          "value_mm": 3.7
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "C40",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C7D",
+          "value_mm": 8.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    },
+    {
+      "state_id": "2798Z-01-03#S05",
+      "step_index": 5,
+      "operation": "精线切35",
+      "route": [
+        "精线切35"
+      ],
+      "operation_kind": "removing",
+      "machining": true,
+      "entities": 1010,
+      "scale": null,
+      "radial_profile": {
+        "scale": null,
+        "radii": {},
+        "distinct": 0,
+        "total": 0,
+        "max": 0.0
+      },
+      "dimensions": [
+        {
+          "handle": "47E",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 6.7,
+          "stored": 19.5,
+          "span": 19.5,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "460",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 3.52,
+          "stored": 10.800000000000011,
+          "span": 10.800000000000011,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "499",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 65.9,
+          "stored": 197.70000000000005,
+          "span": 197.70000000000005,
+          "annotates_geometry": true
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 65.9,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 6.7,
+          "delta_mm": -0.5
+        },
+        {
+          "nominal_handle": "B06",
+          "nominal_value_mm": 3.7,
+          "stated_value_mm": 3.52,
+          "delta_mm": -0.18
+        }
+      ],
+      "kept": [
+        "952"
+      ],
+      "changed": [
+        {
+          "source_handle": "47E",
+          "target_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 6.7,
+          "delta_mm": -0.5,
+          "relative": -0.069444
+        },
+        {
+          "source_handle": "460",
+          "target_handle": "B06",
+          "nominal_value_mm": 3.7,
+          "stated_value_mm": 3.52,
+          "delta_mm": -0.18,
+          "relative": -0.048649
+        }
+      ],
+      "introduced": [],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "932",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AA1",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "AAE",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "ABB",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "ADA",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "C40",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C7D",
+          "value_mm": 8.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    },
+    {
+      "state_id": "2798Z-01-03#S06",
+      "step_index": 6,
+      "operation": "车40",
+      "route": [
+        "车40"
+      ],
+      "operation_kind": "removing",
+      "machining": true,
+      "entities": 423,
+      "scale": null,
+      "radial_profile": {
+        "scale": null,
+        "radii": {},
+        "distinct": 0,
+        "total": 0,
+        "max": 0.0
+      },
+      "dimensions": [
+        {
+          "handle": "21F",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 65.9,
+          "stored": 197.70000000000005,
+          "span": 197.70000000000005,
+          "annotates_geometry": true
+        },
+        {
+          "handle": "239",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 6.7,
+          "stored": 19.500000000000057,
+          "span": 19.499999999999943,
+          "annotates_geometry": true
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 65.9,
+          "delta_mm": 0.0
+        },
+        {
+          "nominal_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 6.7,
+          "delta_mm": -0.5
+        }
+      ],
+      "kept": [
+        "952"
+      ],
+      "changed": [
+        {
+          "source_handle": "239",
+          "target_handle": "CBD",
+          "nominal_value_mm": 7.2,
+          "stated_value_mm": 6.7,
+          "delta_mm": -0.5,
+          "relative": -0.069444
+        }
+      ],
+      "introduced": [],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "932",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AA1",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "AAE",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "ABB",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "ADA",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B06",
+          "value_mm": 3.7
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "C40",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C7D",
+          "value_mm": 8.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    },
+    {
+      "state_id": "2798Z-01-03#S07",
+      "step_index": 7,
+      "operation": "珩研45",
+      "route": [
+        "珩研45",
+        "磁粉检测50",
+        "清洗55",
+        "表面处理65"
+      ],
+      "operation_kind": "removing",
+      "machining": true,
+      "entities": 953,
+      "scale": 3.0,
+      "radial_profile": {
+        "scale": 3.0,
+        "radii": {},
+        "distinct": 0,
+        "total": 0,
+        "max": 0.0
+      },
+      "dimensions": [
+        {
+          "handle": "442",
+          "layer": "1",
+          "dim_type": "AcDbRotatedDimension",
+          "value_mm": 65.9,
+          "stored": 197.70000000000005,
+          "span": 197.70000000000005,
+          "annotates_geometry": true
+        }
+      ],
+      "touched": [
+        {
+          "nominal_handle": "952",
+          "nominal_value_mm": 65.9,
+          "stated_value_mm": 65.9,
+          "delta_mm": 0.0
+        }
+      ],
+      "kept": [
+        "952"
+      ],
+      "changed": [],
+      "introduced": [],
+      "untouched_nominal": [
+        {
+          "nominal_handle": "932",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "96F",
+          "value_mm": 51.8
+        },
+        {
+          "nominal_handle": "98C",
+          "value_mm": 40.0
+        },
+        {
+          "nominal_handle": "9E4",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A00",
+          "value_mm": 4.0
+        },
+        {
+          "nominal_handle": "A19",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A32",
+          "value_mm": 16.0
+        },
+        {
+          "nominal_handle": "A4D",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A64",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "A82",
+          "value_mm": 1.65
+        },
+        {
+          "nominal_handle": "A8F",
+          "value_mm": 2.75
+        },
+        {
+          "nominal_handle": "AA1",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "AAE",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "ABB",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "ACD",
+          "value_mm": 2.8
+        },
+        {
+          "nominal_handle": "ADA",
+          "value_mm": 3.9
+        },
+        {
+          "nominal_handle": "AE7",
+          "value_mm": 5.0
+        },
+        {
+          "nominal_handle": "AF9",
+          "value_mm": 2.6
+        },
+        {
+          "nominal_handle": "B06",
+          "value_mm": 3.7
+        },
+        {
+          "nominal_handle": "B13",
+          "value_mm": 4.8
+        },
+        {
+          "nominal_handle": "B20",
+          "value_mm": 5.9
+        },
+        {
+          "nominal_handle": "B2D",
+          "value_mm": 7.7
+        },
+        {
+          "nominal_handle": "B3A",
+          "value_mm": 8.8
+        },
+        {
+          "nominal_handle": "B47",
+          "value_mm": 9.9
+        },
+        {
+          "nominal_handle": "B54",
+          "value_mm": 11.0
+        },
+        {
+          "nominal_handle": "BB0",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BCA",
+          "value_mm": 6.0
+        },
+        {
+          "nominal_handle": "BE4",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C1E",
+          "value_mm": 2.0
+        },
+        {
+          "nominal_handle": "C40",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "C60",
+          "value_mm": 19.0
+        },
+        {
+          "nominal_handle": "C7D",
+          "value_mm": 8.0
+        },
+        {
+          "nominal_handle": "C9D",
+          "value_mm": 3.0
+        },
+        {
+          "nominal_handle": "CBD",
+          "value_mm": 7.2
+        },
+        {
+          "nominal_handle": "CDA",
+          "value_mm": 4.9
+        },
+        {
+          "nominal_handle": "CF7",
+          "value_mm": 14.1
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "steps": 13,
+    "operations": 8,
+    "dimensions_stated": 31,
+    "localised": 30,
+    "kept": 19,
+    "changed": 11,
+    "introduced": 1,
+    "untouched_nominal": 266
+  },
+  "consistency_issues": [
+    {
+      "kind": "interference",
+      "feature": "CBD",
+      "detail": "同一特征在工序间取值反复: [7.2, 7.0, 7.0, 7.0, 7.2, 6.7, 6.7]",
+      "operations": [
+        "下料0",
+        "数控车5",
+        "精车10",
+        "车研20",
+        "外磨25",
+        "精线切35",
+        "车40"
+      ]
+    },
+    {
+      "kind": "illegal_growth",
+      "feature": "CBD",
+      "state": "2798Z-01-03#S04",
+      "detail": "车研20 之后特征 CBD 为 7.0, 外磨25 却增至 7.2, 中间没有加料工序"
+    }
+  ]
+}
